@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		10263F7423559F98000F470B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10263F7323559F98000F470B /* InfoViewController.swift */; };
+		10263F762355C3F6000F470B /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10263F752355C3F6000F470B /* InfoTableViewCell.swift */; };
+		10263F782355D163000F470B /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10263F772355D163000F470B /* AppInfoViewController.swift */; };
+		10263F7A2355E092000F470B /* CartsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10263F792355E092000F470B /* CartsTableViewCell.swift */; };
+		10263F7C2355E0A3000F470B /* CreditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10263F7B2355E0A3000F470B /* CreditTableViewCell.swift */; };
+		10263F7E2355E0BB000F470B /* SchetaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10263F7D2355E0BB000F470B /* SchetaTableViewCell.swift */; };
+		10263F80235621B4000F470B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10263F7F235621B4000F470B /* HistoryViewController.swift */; };
+		10263F8223562E90000F470B /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10263F8123562E90000F470B /* HistoryTableViewCell.swift */; };
 		10521F7123546519008BB7B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10521F7023546519008BB7B6 /* AppDelegate.swift */; };
 		10521F7323546519008BB7B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10521F7223546519008BB7B6 /* SceneDelegate.swift */; };
 		10521F7523546519008BB7B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10521F7423546519008BB7B6 /* ViewController.swift */; };
@@ -46,6 +53,13 @@
 
 /* Begin PBXFileReference section */
 		10263F7323559F98000F470B /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		10263F752355C3F6000F470B /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		10263F772355D163000F470B /* AppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
+		10263F792355E092000F470B /* CartsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartsTableViewCell.swift; sourceTree = "<group>"; };
+		10263F7B2355E0A3000F470B /* CreditTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditTableViewCell.swift; sourceTree = "<group>"; };
+		10263F7D2355E0BB000F470B /* SchetaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchetaTableViewCell.swift; sourceTree = "<group>"; };
+		10263F7F235621B4000F470B /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		10263F8123562E90000F470B /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		10521F6D23546519008BB7B6 /* bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10521F7023546519008BB7B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10521F7223546519008BB7B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +155,13 @@
 				10521F7623546519008BB7B6 /* Main.storyboard */,
 				10521FAA2354E7D8008BB7B6 /* UserViewController.swift */,
 				10263F7323559F98000F470B /* InfoViewController.swift */,
+				10263F752355C3F6000F470B /* InfoTableViewCell.swift */,
+				10263F8123562E90000F470B /* HistoryTableViewCell.swift */,
+				10263F772355D163000F470B /* AppInfoViewController.swift */,
+				10263F7F235621B4000F470B /* HistoryViewController.swift */,
+				10263F792355E092000F470B /* CartsTableViewCell.swift */,
+				10263F7B2355E0A3000F470B /* CreditTableViewCell.swift */,
+				10263F7D2355E0BB000F470B /* SchetaTableViewCell.swift */,
 				10521F792354651D008BB7B6 /* Assets.xcassets */,
 				10521F7B2354651D008BB7B6 /* LaunchScreen.storyboard */,
 				10521F7E2354651D008BB7B6 /* Info.plist */,
@@ -426,8 +447,15 @@
 				10263F7423559F98000F470B /* InfoViewController.swift in Sources */,
 				10521FA723546EDD008BB7B6 /* KyTableViewCell.swift in Sources */,
 				10521F7123546519008BB7B6 /* AppDelegate.swift in Sources */,
+				10263F80235621B4000F470B /* HistoryViewController.swift in Sources */,
+				10263F7A2355E092000F470B /* CartsTableViewCell.swift in Sources */,
+				10263F8223562E90000F470B /* HistoryTableViewCell.swift in Sources */,
 				10521FA323546C9F008BB7B6 /* OtViewController.swift in Sources */,
+				10263F762355C3F6000F470B /* InfoTableViewCell.swift in Sources */,
 				10521FA923546EE3008BB7B6 /* OtTableViewCell.swift in Sources */,
+				10263F782355D163000F470B /* AppInfoViewController.swift in Sources */,
+				10263F7C2355E0A3000F470B /* CreditTableViewCell.swift in Sources */,
+				10263F7E2355E0BB000F470B /* SchetaTableViewCell.swift in Sources */,
 				10521F7323546519008BB7B6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

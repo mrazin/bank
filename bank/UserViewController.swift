@@ -9,12 +9,15 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
-class UserViewController: UIViewController,UISearchBarDelegate {
+class UserViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var user = ""
-    @IBOutlet weak var searchView: UISearchBar!
+  
+    @IBOutlet weak var creditTable: UITableView!
+    @IBOutlet weak var schetaTable: UITableView!
+    @IBOutlet weak var cartsTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchView.placeholder = "Search"
+       
         if let userU = UserDefaults.standard.string(forKey: "user") {
             user = userU
             // Do any additional setup after loading the view.
@@ -22,31 +25,29 @@ class UserViewController: UIViewController,UISearchBarDelegate {
         
     }
     
-    
-    @IBAction func logout(_ sender: Any) {
-        let errorAlert = UIAlertController(title: "Выход", message: "Вы уверены, что хотите выйти?", preferredStyle: .alert)
-        errorAlert.addAction(UIAlertAction(title: "Нет", style: .cancel, handler: nil))
-        errorAlert.addAction(UIAlertAction(title: "Да", style: .default, handler: { (action) in
-            let url = "http://api.areas.su/logout?username=\(self.user)"
-            
-            Alamofire.request(url, method: .post).validate().responseJSON { response in
-                switch response.result {
-                case .success(let value):
-                    let json = JSON(value)
-                    print("JSON: \(json)")
-                    
-  self.performSegue(withIdentifier: "segueLogout", sender: self)
-                    
-                case .failure(let error):
-                    print(error)
-                }
-            }
-        }))
-        
-        self.present(errorAlert, animated: true, completion: nil)
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0
     }
-    
-    
+
+   
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if tableView == cartsTable {
+             let cell = tableView.dequeueReusableCell(withIdentifier: "cellCarts", for: indexPath) as! CartsTableViewCell
+                return cell
+        }
+        else if tableView == creditTable {
+             let cell = tableView.dequeueReusableCell(withIdentifier: "cellCredits", for: indexPath) as! CreditTableViewCell
+                return cell
+        } else {
+             let cell = tableView.dequeueReusableCell(withIdentifier: "cellCheta", for: indexPath) as! SchetaTableViewCell
+        
+                return cell
+        }
+
+
+    }
+   
 }
 
 
